@@ -1,0 +1,296 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font: 1em sans-serif;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header{
+    background-color: 	#05014a;
+    height:69px;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index:10;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-title{
+    font-size: 28px;
+    color:white;
+    margin: 20px;
+    font-weight: bolder;
+}
+
+.nav-list{
+    display: flex;
+    margin: 30px;
+}
+
+.nav-item{
+    text-decoration: none;
+    margin: 0 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+}
+/* home */
+
+.home-wrapper{
+    padding: 40px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-text {
+    margin:0  auto;
+}
+
+.home-text h1{
+    font-size: 3rem;
+}
+
+
+.home-text .about-btn {
+    display:inline-block;
+    margin-top: 20px;
+    background-color: #05014a;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.name{
+    color: #05014a;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.home-wrapper img{
+    margin: 0 auto;
+    width: 480px; 
+}
+
+
+@media only screen and (max-width: 480px) {
+    .home-wrapper img{
+      width: 75%;
+    }
+}
+
+.socials-grid{
+    margin: 40px 0 ;
+    display: grid;
+    grid-template-columns: repeat(4,40px);
+    column-gap: 20px;
+}
+
+.fa{
+    color:black;
+}
+
+.socials-grid .fa:hover{
+    color:#05014a;
+}
+
+/* About */
+
+.about-wrapper{
+    padding: 40px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.about-title{
+    text-align: center;
+    margin: 50px 0;
+    font-weight: bold;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.about-contents{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    column-gap: 40px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about-contents img{
+    margin:0 20px 0 auto;
+    width: 300px;
+} 
+
+.about-text{
+    margin: 0 auto 0 20px;
+}
+
+/* skills section */
+
+.skills-wrapper{
+    padding: 40px;
+}
+
+.skills-title{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+.skill-list{
+    margin: 0,auto;
+}
+
+.skill-box{
+    display: flex;
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px gray;
+    align-items: center;
+}
+
+.skill-name{
+    margin-left: 20px;
+    min-width: 70px;
+}
+
+.skill-percentage{
+    margin: 0 20px;
+}
+
+.outer-bar{
+    position: relative;
+    width: 100%;
+    background-color: gray;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.inner-bar{
+    position: relative;
+    background-color: #05014a;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.skill-python{
+    width: 80%;
+}
+.skill-c{
+    width: 70%;
+}
+.skill-html{
+    width: 65%;
+}
+
+.skill-css{
+    width: 65%;
+}
+.skill-dart{
+    width: 80%;
+}
+.skill-java{
+    width: 70%;
+}
+.skill-ui-ux{
+    width: 75%;
+}
+.skill-video{
+    width: 70%;
+}
+
+/* projects section */
+
+
+.projects-wrapper{
+    padding: 40px;
+}
+
+.projects-title{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    column-gap: 40px;
+    row-gap: 40px;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.project img{
+    transition: 1s;
+    width: 100%;
+    box-shadow: 0px 4px 4px gray;
+    border-radius: 10px;
+}
+
+
+.project img:hover{
+    transform: scale(1.1);
+}
+
+/* footer */
+
+footer{
+    bottom: 0;
+    background-color: #05014a;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+footer h1{
+    margin:10px 0 40px 0;
+    font-size: 3rem;
+}
+
+
+.footer-socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:30px ;
+}
+
+.footer-socials .fa{
+    color: white;
+}
+
+.footer-socials a{
+    margin:0 30px;
+}
+
+.footer-copyright {
+    margin: 0;
+}
